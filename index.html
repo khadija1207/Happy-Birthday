@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7dce7">
+  <title>Birthday♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">a little something for you 2.0♡</div>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#memories">memories</a>
+    <a href="#mingyu">mingyu room</a>
+    <a href="#letter">the letter</a>
+  </nav>
+</header>
+
+<!-- MUSIC PLAYER -->
+<audio id="birthdayMusic" loop preload="auto">
+  <source src="assets/music/birthday-song.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicToggle" class="music-toggle" type="button"
+        aria-label="Play birthday music">
+  ♫ Play the song
+</button>
+
+<main>
+  <!-- WELCOME PAGE -->
+  <section class="hero paper-bg" id="home">
+    <div class="hero-card">
+      <div class="stamp">a very special delivery · 23rd</div>
+      <div class="scribble">BABE, this is for you ✿</div>
+
+      <h1>
+        To my favourite person<br>
+        <em>who makes everything worth it.</em>
+      </h1>
+
+      <p class="lead">
+        Long distance is hard. But you make it easier. You make it fun.
+        You make it feel like home, even when we are far apart. So, I wanna
+        make sure to remind you that you are loved, and that you are my
+        favourite person on this planet. And that I am so, so grateful for you.
+      </p>
+
+      <p class="scribble">shall we open it?</p>
+
+      <button class="btn" id="openWorld" type="button">
+        open your present ♡
+      </button>
+
+      <p style="font-size:.75rem;margin:20px 0 0;color:#a18491">
+        handmade with love, questionable levels of sentimentality, and sparkles
+      </p>
+    </div>
+  </section>
+
+  <div id="world" class="hidden">
+
+    <!-- SCRAPBOOK -->
+    <section class="section" id="scrapbook">
+      <div class="section-head">
+        <div class="eyebrow">✿ the birthday scrapbook ✿</div>
+        <h2>Hi, BABE</h2>
+        <p>Gonna act a little sentimental here.😂 Don't act surprised.</p>
+      </div>
+
+      <div class="scrap-grid">
+
+        <article class="note n1">
+          <div class="tiny">Hi birthday girl,</div>
+          <h3>The best one I've ever met</h3>
+          <p>
+            You're the best person I know. And you make this long distance
+            friendship feel worth it.
+          </p>
+          <button class="btn secondary small"
+            onclick='showModal("Happy birthday, love", "I do not know what I would do without you in my life. You are the best thing that has ever happened to me. ♡")'>
+            tap ↗
+          </button>
+        </article>
+
+        <article class="note n2">
+          <div class="tiny">tiny reminder ♡</div>
+          <h3>You're loved. A lot.</h3>
+          <p>
+            You're my favourite person in the whole world. My favourite person
+            to talk to. My favourite person to laugh with. My favourite person
+            to be with.
+          </p>
+          <button class="btn secondary small"
+            onclick="showModal('♡','YOU ARE MY BESTTTTTTTTTTTTT FRIEND. AND I LOVE YOU SOOOOOOOOOOO MUCH.♡')">
+            keep this note
+          </button>
+        </article>
+
+        <article class="note n3">
+          <div class="tiny">the friendship department</div>
+          <h3>Almost 9 years of friendship</h3>
+          <p>
+            9 years babe! I am so fucking grateful for you. And there are still
+            many more better years to come. The way I love might not be the best
+            and the way. But I promise to keep loving you the best way my heart
+            knows how. ♡
+          </p>
+          <button class="btn secondary small"
+            onclick="document.querySelector('#memories').scrollIntoView({behavior:'smooth'})">
+            take me to the memories ↓
+          </button>
+        </article>
+
+        <article class="note n4">
+          <div class="tiny">highly confidential</div>
+          <h3>Things I will never recover from</h3>
+          <p>
+            ♡ how effortlessly you became my person<br>
+            ♡ the fact that you exist and I get to know you<br>
+            ♡ how fucking gorgeous you are<br>
+            ♡ all the memories we haven't made yet<br>
+            ♡ the audacity of the universe to put you so far away from me....
+            OMG! I hate it.
+          </p>
+          <p class="tiny">Happy birthday, babe!</p>
+        </article>
+
+        <article class="note n5">
+          <div class="tiny">for the better days</div>
+          <h3>♡ Someday ♡</h3>
+          <p>
+            I can't wait for the day we'll celebrate together. Until then,
+            know that I'm always here, cheering for you, loving you, and
+            missing you in the best way.
+          </p>
+          <button class="btn small"
+            onclick="document.querySelector('#memories').scrollIntoView({behavior:'smooth'})">
+            let's explore ♡
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FRIENDSHIP PHOTOS -->
+    <section class="section" id="memories">
+      <div class="section-head">
+        <div class="eyebrow">chapter one. my gorgeous bsf.</div>
+
+        <h2>
+           You're so attractive, delightful, fine like just so damn
+          perfect ❤️
+        </h2>
+
+        <p>
+         If I were a boy I would be down bad for you. I'm still down bad for
+          you but I'm not a boyyy. So, now an idiot will come and be like,
+          omg! She's mine!! Like, wtf!
+        </p>
+      </div>
+
+      <div class="memory-grid" id="memoryGrid">
+
+        <!-- PHOTO 1: THE BEGINNING -->
+        <article class="memory-card" style="--rot:-1deg"
+          onclick="showModal('❤️','What is 10/10, You are like, 100/10 or ♾️/10.You are perfect.♡')">
+          <div class="photo-slot">
+            <img src="assets/photos/friendship-1.jpeg"
+                 alt="✩✩✩">
+          </div>
+          <h3>GORGEOUS ✿</h3>
+          <p>Literally the best!</p>
+        </article>
+
+        <!-- PHOTO 2: OUR CHAOTIC ERA -->
+        <article class="memory-card" style="--rot:1.5deg"
+          onclick="showModal('❤️','Face card, coffe. Tea is not strong enough.')">
+          <div class="photo-slot">
+            <img src="assets/photos/friendship-2.jpeg"
+                 alt="✩✩✩">
+          </div>
+          <h3>STUNNING ✿</h3>
+          <p>I can't even.</p>
+        </article>
+
+        <!-- PHOTO 3: THE COMFORT CHAPTER -->
+        <article class="memory-card" style="--rot:-.5deg"
+          onclick="showModal('❤️','Gorgeous, gorgeous, gorgeous. I mean, you are literally the most beautiful person I know.')">
+          <div class="photo-slot">
+            <img src="assets/photos/friendship-3.jpeg"
+                 alt="✩✩✩">
+          </div>
+          <h3>You're hella fine.</h3>
+          <p>Fine shyt. hot chic. megneficiant.</p>
+        </article>
+
+        <!-- PHOTO 4: LONG DISTANCE -->
+        <article class="memory-card" style="--rot:1deg"
+          onclick="showModal('❤️','I love this picture. I mean, you looks STUNNING.')">
+          <div class="photo-slot">
+            <img src="assets/photos/friendship-4.jpeg"
+                 alt="✩✩✩">
+          </div>
+          <h3>You are the moment.</h3>
+          <p>Oh, to look at you.</p>
+        </article>
+
+        <!-- PHOTO 5: A FAVOURITE MEMORY -->
+        <article class="memory-card" style="--rot:-1.5deg"
+          onclick="showModal('❤️','You are the cutest cutie of all cute cuties!')">
+          <div class="photo-slot">
+            <img src="assets/photos/friendship-5.jpeg"
+                 alt="✩✩✩">
+          </div>
+          <h3>Divine.</h3>
+          <p>You're so freaking beautiful.</p>
+        </article>
+
+        <!-- PHOTO 6: THE NEXT CHAPTER -->
+        <article class="memory-card" style="--rot:.7deg"
+          onclick="showModal('❤️','Ykw! I need more of these. I mean, Seriously!')">
+          <div class="photo-slot">
+            <img src="assets/photos/friendship-6.jpeg"
+                 alt="✩✩✩">
+          </div>
+          <h3>Holy Moly!</h3>
+          <p>Ravishing.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- MINGYU ROOM -->
+    <section class="section" id="mingyu">
+      <div class="room">
+
+        <div class="room-title">
+          <div class="eyebrow">a highly scientific fan-girl facility</div>
+          <h2>♡ The Mingyu Room ♡</h2>
+          <p>
+            Welcome to the department of Muntaha's extremely valid interests.
+            <br>
+            Please remain calm. Or don't. We both know you won't.
+          </p>
+        </div>
+
+        <div class="mingyu-grid">
+
+          <!-- MINGYU PHOTO 1 -->
+          <article class="idol-card" style="--rot:-1deg">
+            <div class="photo-slot">
+              <img src="assets/photos/mingyu-1.jpg"
+                   alt="Mingyu photo card">
+            </div>
+            <h3>Exhibit A: the bias</h3>
+            <p>Evidence that your standards are, frankly, theatrical.</p>
+          </article>
+
+          <!-- MINGYU PHOTO 2 -->
+          <article class="idol-card" style="--rot:1deg">
+            <div class="photo-slot">
+              <img src="assets/photos/mingyu-2.jpg"
+                   alt="Another Mingyu picture">
+            </div>
+            <h3>Exhibit B: further evidence</h3>
+            <p>
+              I mean, YESSS! Totally. I get it. like, how is this even fair?
+            </p>
+          </article>
+
+        </div>
+
+        <button class="btn dramatic" onclick="mingyuDrama()">
+          I require emotional support.
+        </button>
+
+        <p id="mingyuMessage" class="scribble"
+           style="text-align:center;min-height:32px"></p>
+      </div>
+    </section>
+
+    <!-- CLICKABLE HEARTS -->
+    <section class="section" id="hearts">
+      <div class="section-head">
+        <div class="eyebrow">little truths, kept in hearts</div>
+        <h2>Open when you need a reminder</h2>
+        <p>
+          Tap each heart. They contain extremely serious information about
+          how fond I am of you.
+        </p>
+      </div>
+
+      <div class="hearts" id="heartGrid"></div>
+    </section>
+
+    <!-- LETTER -->
+    <section class="section" id="letter">
+      <div class="section-head">
+        <div class="eyebrow">the last page · no jokes for a minute</div>
+        <h2>One last thing, before you go…</h2>
+        <p>
+          Okay. You have laughed at the website. You have visited your Mingyu
+          sanctuary. Now sit down, birthday girl.
+        </p>
+      </div>
+
+      <div class="letter-wrap">
+        <div class="scribble">for my Muntaha, ♡</div>
+        <h2>Eight and a half years, and still my girl.</h2>
+
+        <div class="letter" id="letterText">Dear Muntaha,
+
+Eight years are a lot of time. And insha'Allah, this is not where it'll stop! In fact, it will never stop. 
+But I miss you! And I miss you like hell! 
+I miss the times, when people used to say that 'these two are always together'. 
+I'm surrounded by peope and I love them. I mean, not all of them. But, no one in this world can be you for me.
+And I know, I'm not physically there with you. 
+But you're my best friend and I'm always there. I promise. And I know it's a stupid thing to say when I'm not actually there but yeah!!! 
+You might be an introvert for people but for me, you're the most fun person to spend time with. 
+You've a beauty that goes far and beyond your appearance! 
+Tho you are gorgeous by appearance, UNBELIEVABLY GORGEOUS!!!♥️
+You're adorable and cute and pretty and stunning and attractive!!!! Drop dead gorgeous! Oh my goshhhhhh!!!!!!
+I hope this coming year be the best one for you so far! I hope amazing things happen to you! Things you've been waiting for. 
+Happy birthday, my girl. Here is to all the memories we have made, the ones we have not made yet, and all the versions of ourselves we will get to meet along the way.Always cheering for you. Always wishing good things for you. Always grateful that our paths crossed.
+With all my love,
+your person ♡</div>
+
+        <p class="scribble">
+          P.S. You are legally required to have the loveliest birthday.
+        </p>
+
+
+        <div id="letterEditor" class="hidden" style="margin-top:18px">
+          <label for="letterInput"
+                 style="display:block;margin-bottom:8px;font-weight:700">
+            Make it sound more like you:
+          </label>
+
+          <textarea id="letterInput"
+            style="width:100%;min-height:280px;padding:14px;border:1px solid #e6b7ca;border-radius:14px;color:#694555;background:#fffdf9;line-height:1.6"></textarea>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BIRTHDAY CAKE FINALE -->
+    <section class="section" id="wish">
+      <div class="cake-area">
+        <div class="eyebrow">final quest · birthday magic</div>
+
+        <h2 style="font-size:clamp(2rem,5vw,3rem);color:#9c4d70">
+          Make a wish, birthday girl.
+        </h2>
+
+        <div class="cake" id="cake">🎂</div>
+
+        <p class="lead">
+          Take a breath. Think of something you want for this next chapter.
+          Ready?
+        </p>
+
+        <button class="btn" id="blowCandles">
+          blow out the candles ✨
+        </button>
+
+        <div class="wish" id="wishMessage"></div>
+
+        <button class="btn secondary small hidden" id="again">
+          one more birthday hug ♡
+        </button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="script">
+        the world got you on this day. we got lucky. ♡
+      </div>
+      <p>
+        Made with love, eight years of lore, and a totally normal amount of pink.
+      </p>
+      <a href="#home" style="color:#9c4d70">
+        back to the beginning ↑
+      </a>
+    </footer>
+
+  </div>
+</main>
+
+<!-- POPUP MODAL -->
+<div id="modal" class="modal hidden"
+     role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+
+  <div class="modal-card">
+    <button class="modal-close" aria-label="Close"
+            onclick="closeModal()">×</button>
+
+    <div class="eyebrow">a little note for you ♡</div>
+    <h3 id="modalTitle"></h3>
+    <p id="modalBody" style="line-height:1.8"></p>
+
+    <button class="btn small" onclick="closeModal()">
+      aw, okay ♡
+    </button>
+  </div>
+</div>
+
+<div id="toast" class="toast hidden" role="status"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
